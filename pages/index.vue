@@ -34,7 +34,7 @@ const handleSubmit = async (e) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await useFetch(`/transcribe`, {
+    const { data } = await useFetch(`/api/transcribe`, {
       method: "POST",
       headers: config.headers,
       body,
